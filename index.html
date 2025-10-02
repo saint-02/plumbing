@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Construction Services | Your Company</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+    .container { width: 90%; max-width: 1200px; margin: auto; }
+
+    /* Header */
+    .site-header { background: #fff; border-bottom: 1px solid #e0e0e0; }
+    .header-inner { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; }
+    .logo img { max-height: 60px; }
+    .main-nav ul { display: flex; gap: 20px; list-style: none; }
+    .main-nav a { text-decoration: none; color: #333; font-weight: 500; transition: color .3s; }
+    .main-nav a:hover { color: #0077b6; }
+    .main-nav a.active { color: #0077b6; }
+    .contact-number a { color: #0077b6; font-weight: bold; text-decoration: none; }
+
+    /* Hero */
+    .construction-hero { 
+      background: url('hero.jpg') center/cover no-repeat; 
+      color: #fff; text-align: center; padding: 120px 20px; 
+    }
+    .construction-hero h1 { font-size: 2.8rem; margin-bottom: 10px; }
+    .construction-hero p { font-size: 1.2rem; max-width: 600px; margin: auto; }
+
+    /* Sections */
+    section { padding: 60px 0; }
+    .intro p { max-width: 900px; margin: auto; font-size: 1.1rem; text-align: center; }
+
+    /* Capabilities */
+    .capabilities .cap-card { 
+      background: #f9f9f9; padding: 25px; margin: 10px; 
+      border-radius: 8px; display: inline-block; width: 280px; 
+      vertical-align: top; box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .cap-card h3 { margin-bottom: 10px; color: #0077b6; }
+    .cap-card p { font-size: 0.95rem; margin-bottom: 15px; }
+    .cap-card a { color: #0077b6; text-decoration: none; font-weight: bold; }
+
+    /* Projects */
+    .featured-work h2 { text-align: center; margin-bottom: 30px; }
+    .work-grid { 
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+      gap: 20px; 
+    }
+    .work-card { background: #fff; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; transition: transform .3s; }
+    .work-card:hover { transform: translateY(-5px); }
+    .work-card img { width: 100%; height: 200px; object-fit: cover; }
+    .work-card h4 { margin: 15px; color: #0077b6; }
+    .work-card p { margin: 0 15px 15px; }
+    .work-card a { margin: 0 15px 20px; display: inline-block; color: #0077b6; text-decoration: none; font-weight: bold; }
+
+    /* CTA */
+    .cta-contact { background: #0077b6; color: white; text-align: center; }
+    .cta-contact h2 { margin-bottom: 15px; }
+    .cta-contact a { color: #fff; font-weight: bold; text-decoration: underline; }
+
+    /* Footer */
+    .site-footer { background: #222; color: #ddd; text-align: center; padding: 20px; font-size: 0.9rem; }
+    .site-footer a { color: #fff; text-decoration: none; }
+
+    @media (max-width: 768px) {
+      .header-inner { flex-direction: column; }
+      .main-nav ul { flex-direction: column; gap: 10px; margin-top: 10px; }
+      .cap-card { width: 100%; margin: 15px 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <img src="logo.jpg" alt="Your Company Logo" />
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#" class="active">Construction Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="contact-number">
+        <a href="tel:0816670562">0816670562</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="construction-hero">
+    <div class="container">
+      <h1>Construction Services</h1>
+      <p>Delivering high-quality results, safely and efficiently — on time and on budget.</p>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="intro">
+    <div class="container">
+      <p>
+        Our construction services are built on decades of experience managing complex projects 
+        across industries. From planning to execution, we prioritize safety, quality, and cost efficiency. 
+        With a dedicated team and advanced equipment, we help clients achieve their project goals with confidence.
+      </p>
+    </div>
+  </section>
+
+  <!-- Capabilities -->
+  <section class="capabilities">
+    <div class="container" style="text-align:center;">
+      <div class="cap-card">
+        <h3>Construction Management</h3>
+        <p>Optimize productivity, reduce downtime, and control project costs through structured management and proven methodologies.</p>
+        <a href="#">Learn More</a>
+      </div>
+      <div class="cap-card">
+        <h3>Construction & Installation</h3>
+        <p>Comprehensive solutions for industrial and commercial projects, delivered with strict attention to safety and quality.</p>
+        <a href="#">Learn More</a>
+      </div>
+      <div class="cap-card">
+        <h3>Crane & Heavy Lift</h3>
+        <p>State-of-the-art equipment and experienced operators ensure precision and reliability in heavy lifting operations.</p>
+        <a href="#">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Work -->
+  <section class="featured-work">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <div class="work-grid">
+        <div class="work-card">
+          <img src="istockphoto-599888316-1024x1024.jpg" alt="Project 1">
+          <h4>Gas-Treating Facility Upgrade</h4>
+          <p>Comprehensive EPC + Fabrication project delivering efficiency and innovation.</p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="work-card">
+          <img src="istockphoto-682839254-1024x1024.jpg" alt="Project 2">
+          <h4>Natural Gas Compression Plant</h4>
+          <p>End-to-end EPC solution designed for reliability and long-term performance.</p>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-contact">
+    <div class="container">
+      <h2>Looking for Professional Construction Services?</h2>
+      <p>Call us today at <a href="tel:0816670562">0816670562</a> or <a href="#">send us a message</a>.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Your Company. All rights reserved.</p>
+      <p>Contact: <a href="tel:0816670562">0816670562</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
